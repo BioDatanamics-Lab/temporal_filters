@@ -1,0 +1,513 @@
+Codes:
+
+SynapticShortTermPlasticity_ToyModels.m
+List of other codes: end of this file
+
+==================================================
+Figures:
+==================================================
+(1) 
+STP_TemporalSimplifiedTraces_01.eps
+STP_TemporalSimplifiedEnvelopes_01.eps
+Code:
+SynapticShortTermPlasticity_ToyModels_01.m
+==================================================
+(2)
+STP_TemporalEnvelopes_02_fac.eps
+STP_TemporalEnvelopes_02_dep.eps
+SynapticShortTermPlasticity_ToyModels_02a.m
+SynapticShortTermPlasticity_ToyModels_02b.m
+==================================================
+(3)
+STP_TemporalEnvelopes_03_01.eps
+STP_TemporalEnvelopes_03_02.eps
+SynapticShortTermPlasticity_ToyModels_03_01.m
+SynapticShortTermPlasticity_ToyModels_03_02.m
+==================================================
+(4) sgma_d, sgma_f and sgma_d+f as a function of the input spike frequency 
+for representative values of tau_dep and tau_fac
+STP_SigmadepVsFspk_01.eps
+STP_SigmafacVsFspk_01.eps
+STP_SigmadepfacVsFspk_01.eps
+SynapticShortTermPlasticity_ToyModels_TimeScales_01.m (KSE=2)
+==================================================
+(5) Effects of cutting the (3rd) term corresponding to the combined time 
+constants sgma_d and sgma_f. 
+STP_TemporalEnvelope_DeltaS_01_01.eps (taudep=100, taufac=100, fspk=40)
+STP_TemporalEnvelope_DeltaS_01_02.eps (taudep=100, taufac=100, fspk=100)
+STP_TemporalEnvelope_DeltaS_01_03.eps (taudep=100, taufac=100, fspk=200) 
+STP_TemporalEnvelope_DeltaS_02_01.eps (taudep=200, taufac=200, fspk=40)
+STP_TemporalEnvelope_DeltaS_02_02.eps (taudep=200, taufac=200, fspk=100)
+STP_TemporalEnvelope_DeltaS_02_03.eps (taudep=200, taufac=200, fspk=200)
+SynapticShortTermPlasticity_ToyModels_TimeScales_01.m (KSE=1)
+==================================================
+(6) Envelope peak functions (F, G, H) devoid from biophysical interpretation
+EnvelopePeak_TemporalFilters_01.eps C=0.8, A=0.5, eta=0.1
+EnvelopePeak_TemporalFilters_02.eps C=0.8, A=0.5, eta=1
+EnvelopePeak_TemporalFilters_03.eps C=0.8, A=0.5, eta=10
+EnvelopePeak_TemporalFilters_04.eps C=0.8, A=0.2, eta=1
+EnvelopePeak_TemporalFilters_05.eps C=0.8, A=0.4, eta=1
+EnvelopePeak_TemporalFilters_06.eps C=0.8, A=0.6, eta=1
+EnvelopePeak_TemporalFilters.m
+==================================================
+(7) Xfp, Zfp and sgmadep/sgmafac as a function of the input spike frequency 
+for representative values of tau_dep and tau_fac
+STP_RationsigmadepsigmafacVsFspk_01.eps
+STP_XfpVsFspk_01.eps
+STP_ZfpVsFspk_01.eps
+Code is a continuation/modification of the one used in (4)
+SynapticShortTermPlasticity_ToyModels_TimeScales_02.m (KSE=2)
+==================================================
+(8) 
+STP_TemporalEnvelopes_04_01.eps 
+STP_TemporalEnvelopes_04_02.eps 
+SynapticShortTermPlasticity_ToyModels_04_01.m 
+SynapticShortTermPlasticity_ToyModels_04_02.m 
+==================================================
+(9) 
+STP_TemporalEnvelopes_05_01.eps 
+STP_TemporalEnvelopes_05_02.eps 
+SynapticShortTermPlasticity_ToyModels_05_01.m 
+SynapticShortTermPlasticity_ToyModels_05_02.m 
+==================================================
+(10) 
+STP_TemporalEnvelopes_06_01.eps 
+STP_TemporalEnvelopes_06_02.eps 
+SynapticShortTermPlasticity_ToyModels_06_01.m 
+SynapticShortTermPlasticity_ToyModels_06_02.m 
+==================================================
+(11) Frequency profiles for Xfp, Zfp and DeltaSfp
+STP_FrequencyProfiles_DeltaSresonance_01.eps 
+STP_FrequencyProfiles_DeltaSresonance_02.eps 
+STP_FrequencyProfiles_DeltaSresonance_03.eps
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_01.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_02.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_03.m
+adep = 0.1, afac = 0.2, Xinf = 1, Zinf = 0;
+==================================================
+(12) Frequency profiles for Xfp, Zfp and DeltaSfp
+STP_FG_FrequencyProfiles_DeltaSresonance_01.eps 
+STP_FG_FrequencyProfiles_DeltaSresonance_02.eps 
+STP_FG_FrequencyProfiles_DeltaSresonance_03.eps
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_01.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_02.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_03.m
+==================================================
+(13) Analysis of the effects of the Q-function on the history-dependent
+(temporal) filters
+SynapticShortTermDynamics_ToyModels_Qfunction_01.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_02.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_03.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_04.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_05.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_06.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_07.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_08.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_09.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_01.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_02.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_03.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_04.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_05.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_06.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_07.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_08.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_09.m 
+==================================================
+(14) Dependence of sigma_d and sigma_f with tau_dep/fac and a_d/f
+using the analytical expression Q(a,tau).
+astp = 0.1, taustp = 100, taustp=200, taustp=3000
+SynapticShortTermDynamics_ToyModels_SigmaTimeScales_01.eps
+astp = 0.2, taustp = 100, taustp=200, taustp=3000; 
+SynapticShortTermDynamics_ToyModels_SigmaTimeScales_02.eps
+ad=0.1, af=0.1, taudep=taufac=100, taudep=taufac=200, taudep=taufac=300
+SynapticShortTermDynamics_ToyModels_SigmaTimeScales_03.eps
+
+SynapticShortTermDynamics_ToyModels_SigmaTimeScales.m
+==================================================
+(15) Transition from temporal high- to low-pass filters as the presynaptic 
+frequency increases via a temporal band-pass filtering mechanism for fixed 
+values of the  synaptic depression and facilitation time constants
+SynapticShortTermDynamics_ToyModels_Qfunction_10.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_11.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_12.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_13.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_14.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_15.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_10.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_11.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_12.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_13.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_14.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_15.m
+==================================================
+(16) Examples of sgma_{d+f} not capturing the corresponding temporal band-pass 
+filter 
+adep = 0.1, afac = 0.1, taudep = 250, taufac = 250;
+SynapticShortTermDynamics_ToyModels_Qfunction_16.eps
+adep = 0.1, afac = 0.2, taudep = 200, taufac = 250;
+SynapticShortTermDynamics_ToyModels_Qfunction_17.eps
+adep = 0.1, afac = 0.2, taudep = 100, taufac = 250;
+SynapticShortTermDynamics_ToyModels_Qfunction_18.eps
+SynapticShortTermDynamics_ToyModels_Qfunction_16.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_17.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_18.m
+==================================================
+(17) Postsynaptic potential response using S 
+adep = 0.1, afac = 0.1, xinf = 1, zinf = 0, DeltaSpk=10 (SpkFreqin=100);
+Code: SynapticShortTermPlasticity_DASynModel.m
+KSE = 1
+Sn, DeltaSn & S0n as a function of the spike number
+Graphs: SynapticShortTermPlasticity_DASynModel_XX_YY.eps
+* XX = 01: taudep =0.1, taufac = 100
+YY=01: taudec = 10, YY=02: taudec = 100, YY=03: taudec = 250
+* XX = 02: taudep =250, taufac = 0.1
+YY=0.1: taudec=3, YY=02: taudec = 100, YY=03: taudec = 500
+* XX = 03: taudep =250, taufac = 250
+YY=01: taudec=10, YY=02: taudec=50, YY=03: 250
+KSE = 2
+Sn as a function of the spike number & taudec 
+*XX=04:  taufac=0.1
+YY=01: taudep =250, YY=02: taudep=500
+KSE = 3
+Sn as a function of the spike number & taudep
+*XX=05: taufac=0.1
+YY=01: taudec = 50, YY=02: taudec=100
+KSE = 4
+Sn as a function of the spike number & taudep
+*XX=06: taufac=250
+YY=01: taudec = 50, YY=02: taudec=10
+KSE = 5
+Sn as a function of the spike number & taufac
+*XX=07: taudep=250
+YY=01: taudec = 50, YY=02: taudec=10
+==================================================
+(18) Postsynaptic potential response using the passive membrane equation
+adep = 0.1, afac = 0.1, xinf = 1, zinf = 0
+SynapticShortTermPlasticity_DASynPassive.m
+KSE = 1: single cell
+Graphs: SynapticShortTermPlasticity_DASynPassive_ZZ_XX_YY.eps
+
+***ZZ=01
+C=1, El = -60, Iapp=0, Gsyn=0.1, Esyn=0
+*XX=01 DeltaSpk=10 (SpkFreqin=100), taudep=250, taufac=0.1
+YY=01: gL=0.5 (taum=2), YY=02: gL=0.1 (taum=10), YY=03: gL=0.025 (taum=40),
+*XX=02 DeltaSpk=10 (SpkFreqin=100), taudep=250, taufac=250
+YY=01: gL=0.5 (taum=2), YY=02: gL=0.1 (taum=10), YY=03: gL=0.025 (taum=40),
+
+==================================================
+(19) Two interacting depression-facilitation processes (with different time scales)
+Code: SynapticShortTermPlasticity_ToyModels_TwoProcesses_Cross.m
+***Comparison of the three types of temporal filters (low-, high- and band-pass) with the toy model F, G and H functions
+etad=etaf=0.5
+STDtwoprocessesCross_Filters_Dep_XX_YY.eps
+STDtwoprocessesCross_Filters_Fac_XX_YY.eps
+STDtwoprocessesCross_Filters_DepFac_XX_YY.eps
+*** Dependence of the filters time scales with the single event tima scale tau_dep2 for tau_dep1 constant.
+
+STDtwoprocessesCross_Sigmas_Dep_XX_YY.eps
+STDtwoprocessesCross_Sigmas_Fac_XX_YY.eps
+STDtwoprocessesCross_Sigmas_DepFac_XX_YY.eps
+
+*** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+taudep2 = 1000;
+taufac2 = 1000;
+etadep = 0.5;
+etafac = 0.5;
+***** YY=01: 
+taudep1 = 100; 
+taufac1 = 100;
+***** YY=02: 
+taudep1 = 10; 
+taufac1 = 10; 
+==================================================
+20) Presynaptic input variability: Gaussian perturbations of constant presynaptic ISIs with variance D (and mean zero). 
+Code:
+SynapticShortTermPlasticity_ToyModels_MultipleFrequencies.m (KSE=4)
+PRTYPE=1: Uniform value of D (variance) for all unperturbed ISIs
+PRTYPE=2: D (variance) proportional to the unperturbed ISI.
+***** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+PRTYPE = 1 (
+Graphs: STD_TempFilters_pert_XX_YY_ZZ.eps
+***YY = 01
+taudep =100
+taufac = 100
+ZZ=01 fspk = 40 (DeltaSpk=25)
+ZZ=02 fspk = 100 (DeltaSpk=10)
+ZZ=03 fspk = 200 (DeltaSpk=5)
+***YY = 02
+taudep =500
+taufac = 500
+ZZ=01 fspk = 40 (DeltaSpk=25)
+ZZ=02 fspk = 100 (DeltaSpk=10)
+ZZ=03 fspk = 200 (DeltaSpk=5)
+
+The variance was computed for the second half of the sequences: Xc, Zc and Mc
+YY=01, ZZ=01
+var(Xc)=0.000015	 var(Zc)=0.000020	 var(Mc)=0.000002
+YY=01, ZZ=02
+var(Xc)=0.000067	 var(Zc)=0.000055	 var(Mc)=0.000006
+YY=01, ZZ=03
+var(Xc)=0.000152	 var(Zc)=0.000092	 var(Mc)=0.000053
+YY=02, ZZ=01
+var(Xc)=0.000006	 var(Zc)=0.000003	 var(Mc)=0.000002
+YY=02, ZZ=02
+var(Xc)=0.000012	 var(Zc)=0.000005	 var(Mc)=0.000008
+YY=02, ZZ=03
+var(Xc)=0.000016	 var(Zc)=0.000006	 var(Mc)=0.000013
+==================================================
+20) Presynaptic input: Poisson spike trains (rate=Freq)
+Code:
+SynapticShortTermPlasticity_ToyModels_MultipleFrequencies.m (KSE=3)
+Graphs: STD_TempFilters_Poisson_XX_YY_ZZ_Trial.eps
+             STD_Variability_Poisson_XX_YY_ZZ_Trial.eps
+Tmax=200000
+**** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+ISImin=1
+***YY = 01
+taudep =100
+taufac = 100
+* ZZ=01 
+fspk = 50
+* ZZ=02
+fspk = 100
+***YY = 02
+taudep =100
+taufac = 100
+* ZZ=01 
+fspk = 50
+* ZZ=02
+fspk = 100
+***YY = 02
+taudep =100
+taufac = 500
+* ZZ=01 
+fspk = 50
+* ZZ=02
+fspk = 100
+
+Graphs: 
+             STD_Variability_Poisson_XX_YY_ZZ_Trial.eps
+
+**** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+ISImin=1
+***YY = 01
+taudep =100
+taufac = 100
+* ZZ=01 
+fspk = 50
+* ZZ=02
+fspk = 100
+* ZZ=03
+fspk=200
+
+XX=01, YY=01, ZZ=01
+var(X)  = 0.006864	 var(Z)  = 0.007863	 var(M)  = 0.000405
+XX=01, YY=01, ZZ=02
+var(X)  = 0.005590	 var(Z)  = 0.004712	 var(M)  = 0.000419
+XX=01, YY=01, ZZ=03
+var(X)  = 0.003256	 var(Z)  = 0.002017	 var(M)  = 0.000880
+XX=01, YY=02, ZZ=01
+var(X)  = 0.002708	 var(Z)  = 0.001508	 var(M)  = 0.001108
+XX=01, YY=02, ZZ=02
+var(X)  = 0.001137	 var(Z)  = 0.000512	 var(M)  = 0.000723
+XX=01, YY=02, ZZ=03
+var(X)  = 0.000372	 var(Z)  = 0.000148	 var(M)  = 0.000291
+==================================================
+22) Variability in response to Poisson presynaptic spike train inputs 
+
+SynapticShortTermPlasticity_ToyModels_MultipleFrequencies.m (KSE=301, 302)
+Dependence of Var(X), Var(Z) and Var(M) on taudep and taufac for various values of the Poisson spiking rate rspk
+Tmax=500000
+
+Graphs:	STD_VariabilityPoisson_VarVsTaustp_XX_YY_ZZ.eps
+		STD_VariabilityPoisson_MeanVsTaustp_XX_YY_ZZ.eps
+
+**** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+ISImin=1
+YY=01
+No description
+ZZ=01
+rspk = 50
+ZZ=02
+rspk = 100
+ZZ=03
+rspk = 200
+
+Graphs:	STD_VariabilityPoisson_VarVsFreq_XX_YY_ZZ.eps
+
+**** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+ISImin=1
+YY=01
+No description
+ZZ=01
+taudep=taufac=100
+ZZ=02
+taudep=taufac=500
+ZZ=03
+taudep=taufac=1000
+
+
+
+==================================================
+22) Presynaptic input: Bursts made of two frequencies
+Code:
+SynapticShortTermPlasticity_ToyModels_MultipleFrequencies.m (KSE=2)
+Graphs:STD_TempFiltersVariability_Bursts_XX_YY_ZZ.eps
+**** XX=01: 
+taudec = 5; 
+adep = 0.1; 
+afac = 0.2; 
+Xinf = 1; 
+Zinf = 0;
+***YY = 01
+taudep =100
+taufac = 100
+* ZZ=01 
+fspk1 = 4
+fspk2 = 50
+* ZZ=02
+fspk1 = 4
+fspk2 = 100
+* ZZ=03 
+fspk1 = 4
+fspk2 = 200
+***YY = 02
+taudep =500
+taufac = 500
+* ZZ=01 
+fspk1 = 4
+fspk2 = 50
+* ZZ=02
+fspk1 = 4
+fspk2 = 100
+* ZZ=03 
+fspk1 = 4
+fspk2 = 200
+
+The variability computed as the peak-to-trough amplitude (max-min) for the last cycle:
+XX=01, YY=01, ZZ=01
+AmpX=0.179385	 AmpZ=0.239436	 AmpM=0.121710
+XX=01, YY=01, ZZ=02
+AmpX=0.325067	 AmpZ=0.372605	 AmpM=0.094368
+XX=01, YY=01, ZZ=03
+AmpX=0.463064	 AmpZ=0.453821	 AmpM=0.018037
+XX=01, YY=02, ZZ=01
+AmpX=0.128400	 AmpZ=0.127611	 AmpM=0.036279
+XX=01, YY=02, ZZ=02
+AmpX=0.174224	 AmpZ=0.161662	 AmpM=0.094537
+XX=01, YY=02, ZZ=03
+AmpX=0.197017	 AmpZ=0.168252	 AmpM=0.138619
+==================================================
+
+==================================================
+
+% Parameters
+
+Xinf = 1;
+Zinf = 0;
+adep = 0.1;
+afac = 0.1;
+
+taudec = 5;
+
+C = 1;
+El = -60;
+gL = 0.025;
+Iapp = 0;
+
+taudep = 1000;
+taufac = 0.1;
+
+
+Gsyn = 0.1;
+Esyn = 0;
+
+% Time definitions
+
+Tmax = 1000;
+dt = 0.01;
+t = 0:dt:Tmax;
+
+% Input spike definitions
+
+SpkFreqin = 100;
+SpkPerin = 1000/SpkFreqin;
+Nspk = floor(Tmax/SpkPerin);
+tspk = (1:Nspk)*SpkPerin;
+
+
+====================================================
+SynapticShortTermPlasticity_ToyModels_TimeScales_01.m (KSE=1)
+EnvelopePeak_TemporalFilters.m
+SynapticShortTermPlasticity_ToyModels_TimeScales_02.m (KSE=2)
+SynapticShortTermPlasticity_ToyModels_04_01.m 
+SynapticShortTermPlasticity_ToyModels_04_02.m
+SynapticShortTermPlasticity_ToyModels_05_01.m 
+SynapticShortTermPlasticity_ToyModels_05_02.m
+SynapticShortTermPlasticity_ToyModels_06_01.m 
+SynapticShortTermPlasticity_ToyModels_06_02.m
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_01.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_02.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_03.m
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_01.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_02.m 
+SynapticShortTermPlasticity_ToyModels_SynapticResonance_FG_03.m
+SynapticShortTermDynamics_ToyModels_Qfunction_01.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_02.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_03.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_04.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_05.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_06.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_07.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_08.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_09.m 
+SynapticShortTermDynamics_ToyModels_SigmaTimeScales.m
+SynapticShortTermDynamics_ToyModels_Qfunction_10.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_11.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_12.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_13.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_14.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_15.m
+SynapticShortTermDynamics_ToyModels_Qfunction_16.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_17.m 
+SynapticShortTermDynamics_ToyModels_Qfunction_18.m
+Code: SynapticShortTermPlasticity_DASynModel.m
+SynapticShortTermPlasticity_DASynPassive.m
+====================================================
+
+Code: SynapticResonance.m
+
+We distinguish between two types of measures: DeltaV (Vmax-Vmin as a function of f) and Venv (graphs of Vmax and Vmin  as a function of f).
+
+* A passive cell receiving excitation is a DeltaV low-pass filter but a Venv high-pass filter
